@@ -1,0 +1,12 @@
+.coveralls.yml    export-ignore
+.docheader        export-ignore
+.gitignore        export-ignore
+.laminas-ci.json   export-ignore
+.php-cs-fixer.php   export-ignore
+/.github   export-ignore
+/.laminas-ci   export-ignore
+/docs             export-ignore
+/examples         export-ignore
+/tests            export-ignore
+phpunit.xml.dist export-ignore
+docker.compose-tests export-ignore

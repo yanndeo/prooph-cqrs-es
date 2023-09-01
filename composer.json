@@ -1,0 +1,17 @@
+{
+    "name": "wiggli/prooph-in-action",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "prooph/service-bus": "^6.3",
+        "prooph/event-sourcing": "^5.7",
+        "prooph/event-store": "^7.9",
+        "prooph/pdo-event-store": "^1.15",
+        "prooph/event-store-bus-bridge": "^3.4",
+        "prooph/snapshotter": "^2.2",
+        "prooph/pdo-snapshot-store": "^1.6"
+    }
+}
