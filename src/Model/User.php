@@ -10,6 +10,7 @@ use Prooph\EventSourcing\AggregateRoot;
 class User extends AggregateRoot
 {
     private $id, $email, $password;
+
     public function changeEmail(string $newEmail): void 
     {
         if ($this->email === $newEmail) {
@@ -44,13 +45,13 @@ class User extends AggregateRoot
     protected function apply(AggregateChanged $event): void
     {
         switch (get_class($event)) {
+
             case UserRegistered::class:
                 $this->id = $event->aggregateId();
                 $this->email = $event->email();
                 $this->password = $event->password();
                 break;
             case EmailChanged::class:
-                # code...
                 $this->id = $event->aggregateId();
                 $this->email = $event->email();
                 break;

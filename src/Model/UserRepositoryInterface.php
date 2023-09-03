@@ -6,5 +6,5 @@ namespace App\Model;
 interface UserRepositoryInterface
 {
     public function save(User $user): void;
-    public function get(User $user): void;
+    public function get(string $id): ?User;
 }

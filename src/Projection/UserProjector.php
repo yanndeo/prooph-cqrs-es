@@ -5,7 +5,7 @@ namespace App\Projection;
 use App\Model\Event\EmailChanged;
 use App\Model\Event\UserRegistered;
 
-class UserProjector
+final class UserProjector
 {
     private $PDO;
 

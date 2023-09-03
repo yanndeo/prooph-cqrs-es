@@ -27,7 +27,7 @@ class UserRepository extends AggregateRepository implements UserRepositoryInterf
         
     }
 
-    public function save(User $user)
+    public function save(User $user): void
     {
         $this->saveAggregateRoot($user);
     }

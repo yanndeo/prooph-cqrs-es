@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace App\Model\Command;
 use App\Infrastructure\UserRepository;
+
 class ChangeEmailHandler
 {
     private $repository;
